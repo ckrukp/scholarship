@@ -1,0 +1,56 @@
+
+<ion-content>
+
+  <div class="main-sky">
+      <ion-item class="searchbar" lines="none">
+        <ion-label>Search university, scholarship or country</ion-label>
+        <ion-icon class="searchbar-icon" name="search" slot="start"></ion-icon>
+      </ion-item>
+  </div>
+  <div class="main-bg"></div>
+
+  <div class="ss-wrapper">
+    <div class="country">
+      <ion-item class="country note" lines="none">
+        <ion-label class="subject">Awarding Countries</ion-label>
+        <ion-label class="all" slot="end">View All</ion-label>
+      </ion-item>
+    
+      <div class="country-div">
+        <ion-card class="card-small bg-white" *ngFor="let name of country_name_arr; let i = index" >
+          <div class="country-flag" [style.background]="'url('+country_img_arr[i]+')'"></div>
+          <div class="country-name">{{name}}</div>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="national">
+      <ion-item class="bg-transparent color-black" lines="none">
+        <ion-label class="f-s-18">Your Nationality</ion-label>
+      </ion-item>
+
+      <div class="national-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap">
+          <ion-card class="card-small bg-blue-grad" *ngFor="let name of country_name_arr; let i = index" >
+            <div class="country-flag" [style.background]="'url('+country_img_arr[i]+')'"></div>
+            <div class="country-name color-white f-s-13">{{name}}</div>
+          </ion-card>
+      </div>
+    </div>
+
+    <div class="subjects">
+      <ion-item class="bg-transparent color-black p-l-10" lines="none">
+        <ion-label class="f-s-18">Subjects</ion-label>
+        <ion-label class="f-s-13 d-inherit color-blue" slot="end">View All</ion-label>
+      </ion-item>
+
+      <div class="subjects-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap justify-content-evenly">
+        <ion-card class="card-small bg-white" *ngFor="let name of country_name_arr; let i = index" >
+          <div class="country-flag" [style.background]="'url('+country_img_arr[i]+')'"></div>
+          <div class="country-name">{{name}}</div>
+        </ion-card>
+      </div>
+    </div>
+
+    
+  </div>
+</ion-content>

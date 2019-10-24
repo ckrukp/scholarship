@@ -1,0 +1,35 @@
+ion-content {
+    --background: #F7FAFD;
+}
+
+.swiper-slide {
+    display: block;
+    background: white;
+    height: calc(100vh - 16px);
+    padding-top: 27vh;
+    .slide-title {
+        font-family: SF Pro Display;
+        font-size: 18px;
+        color: #278CEF;
+        margin-top: 14.5vh;
+        // line-height: 140%;
+    }
+    p {
+        font-family: SF Pro Text;
+        font-size: 14px;
+        line-height: 22px;
+        // line-height: 170%;
+        color: #3D4452;
+    }
+    ion-button {
+        width: 268px;
+        height: 48px;
+        font-family: SF Pro Display;
+        font-size: 16px;
+        box-shadow: 0px 4px 12px rgba(39, 140, 239, 0.2);
+        --border-radius: 10px;
+        position: absolute;
+        bottom: 13.6vh;
+        transform: translate(-50%, 0%);
+    }
+}
