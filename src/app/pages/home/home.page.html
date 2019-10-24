@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="national">
+    <div class="national m-t-15">
       <ion-item class="bg-transparent color-black" lines="none">
         <ion-label class="f-s-18">Your Nationality</ion-label>
       </ion-item>
@@ -38,19 +38,61 @@
     </div>
 
     <div class="subjects">
-      <ion-item class="bg-transparent color-black p-l-10" lines="none">
+      <ion-item class="bg-transparent color-black" lines="none">
         <ion-label class="f-s-18">Subjects</ion-label>
         <ion-label class="f-s-13 d-inherit color-blue" slot="end">View All</ion-label>
       </ion-item>
 
       <div class="subjects-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap justify-content-evenly">
-        <ion-card class="card-small bg-white" *ngFor="let name of country_name_arr; let i = index" >
-          <div class="country-flag" [style.background]="'url('+country_img_arr[i]+')'"></div>
+        <ion-card class="card-small bg-white" *ngFor="let name of subject_name_arr; let i = index" >
+          <div class="country-flag" [style.background]="'url('+subject_img_arr[i]+')'"></div>
           <div class="country-name">{{name}}</div>
         </ion-card>
       </div>
     </div>
 
-    
+    <div class="universities m-t-15">
+      <ion-item class="bg-transparent color-black" lines="none">
+        <ion-label class="f-s-18">Universities</ion-label>
+        <ion-label class="f-s-13 d-inherit color-blue" slot="end">View All</ion-label>
+      </ion-item>
+
+      <div class="universities-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap justify-content-evenly">
+        <ion-card class="card-medium bg-white" *ngFor="let name of university_name_arr; let i = index" >
+          <div class="uni-img" [style.background]="'url('+university_img_arr[i]+')'"></div>
+          <div class="f-s-16 p-l-25 p-t-15 uni-country">{{name}} Universities</div>
+          <div class="f-s-13 p-l-25 p-t-7  uni-count">{{university_count_arr[i]}}+ Universities</div>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="degrees m-t-15">
+      <ion-item class="bg-transparent color-black" lines="none">
+        <ion-label class="f-s-18">Degree Levels</ion-label>
+      </ion-item>
+
+      <div class="degrees-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap">
+          <ion-card class="card-small bg-white" *ngFor="let name of degree_name_arr; let i = index" >
+            <div class="country-flag" [style.background]="'url('+degree_img_arr[i]+')'"></div>
+            <div class="country-name f-s-13">{{name}}</div>
+          </ion-card>
+      </div>
+    </div>
+
+    <div class="scholars">
+      <ion-item class="bg-transparent color-black" lines="none">
+        <ion-label class="f-s-18">Latest Scholarships</ion-label>
+        <ion-label class="f-s-13 d-inherit color-blue" slot="end">View All</ion-label>
+      </ion-item>
+
+      <div class="scholars-div p-l-16 o-flow-x-auto d-flex flex-column flex-wrap justify-content-flex-start">
+        <ion-card class="card-medium bg-white" *ngFor="let name of scholar_name_arr; let i = index" >
+          <div class="uni-img" [style.background]="'url('+scholar_img_arr[i]+')'"></div>
+          <div class="f-s-14 p-x-25 uni-country">{{name}}</div>
+          <div class="f-s-13 p-x-25 p-t-7  uni-count">{{scholar_date_arr[i]}}</div>
+        </ion-card>
+      </div>
+    </div>
+
   </div>
 </ion-content>
