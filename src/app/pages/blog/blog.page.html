@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>blog</ion-title>
+    <ion-title>Blog List</ion-title>
+    <ion-icon slot="end" name="search"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <div class="blog-list">
+    <ion-card *ngFor="let blog of blogdata">
+      <div class="blog-item-header-img">
+        <img src="{{blog.imgPath}}" />
+      </div>
+      <ion-card-content (click)="displayDetails()">
+        <div class="blog-item-header-date">{{blog.date}}</div>
+        <div class="blog-item-header-title">{{blog.title}}</div>
+      
+        <div class="blog-item-content-text">
+          {{blog.content}}
+        </div>
+
+        <div class="blog-item-content-addon">
+          <div class="blog-item-content-comments">
+            <ion-icon src="../../../assets/img/blog-comment-icon.svg"></ion-icon>
+            <ion-label> {{blog.commentCount}} Comments</ion-label>
+          </div>
+          <div class="blog-item-content-share">
+            <ion-icon src="../../../assets/img/blog-share-icon.svg"></ion-icon>
+            <ion-label> Share</ion-label>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 
 </ion-content>

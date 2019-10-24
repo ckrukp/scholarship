@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back" slot="start" (click)="displayPrevious()"></ion-icon>
+    <ion-title>Notifications</ion-title>
+    <ion-icon name="settings" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="notify-list">
+
+    <ion-list>
+      <ion-item-group *ngFor="let group of groups">
+        <!-- <ion-item-divider sticky>
+            {{group.date}}
+        </ion-item-divider> -->
+        <div class="divider-ss">
+          {{group.date}}
+        </div>
+        <ion-item-sliding *ngFor="let session of group.sessions">
+          <ion-item lines="none" class="notify-item">
+            <ion-card>
+              <ion-card-content>
+                <div class="notify-item-title">
+                  <ion-icon src="../../../assets/img/notify-item-on-icon.svg" *ngIf="session.status === 'active'"></ion-icon>
+                  <ion-icon src="../../../assets/img/notify-item-off-icon.svg" *ngIf="session.status === 'inactive'"></ion-icon>
+                  {{session.title}}
+                </div>
+                <div class="notify-item-date">
+                  {{session.date}}
+                </div>
+                <div class="notify-item-content">
+                  {{session.content}}
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+          <ion-item-options>
+            <ion-item-option>
+              <ion-icon class="notify-item-remove-btn" src="../../../assets/img/notify-remove-icon.svg"></ion-icon>
+              <div class="notify-item-remove-label">Remove</div>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-item-group>
+    </ion-list>
+
+  </div>
+</ion-content>

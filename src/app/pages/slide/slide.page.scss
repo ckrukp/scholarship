@@ -8,14 +8,14 @@ ion-content {
     height: calc(100vh - 16px);
     padding-top: 27vh;
     .slide-title {
-        font-family: SF Pro Display;
+        font-family: 'SF-Pro-Display-Regular';
         font-size: 18px;
         color: #278CEF;
         margin-top: 14.5vh;
         // line-height: 140%;
     }
     p {
-        font-family: SF Pro Text;
+        font-family: 'SF-Pro-Text-Regular';
         font-size: 14px;
         line-height: 22px;
         // line-height: 170%;
@@ -24,7 +24,7 @@ ion-content {
     ion-button {
         width: 268px;
         height: 48px;
-        font-family: SF Pro Display;
+        font-family: 'SF-Pro-Display-Regular';
         font-size: 16px;
         box-shadow: 0px 4px 12px rgba(39, 140, 239, 0.2);
         --border-radius: 10px;

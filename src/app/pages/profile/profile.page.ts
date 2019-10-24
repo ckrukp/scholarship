@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { NotificationsPage } from '../notifications/notifications.page';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  displayNotifications(){
+    this.navCtrl.navigateForward('/notifications');
+  }
+
+  displayContactus(){
+    this.navCtrl.navigateForward('/contactus');
+  }
+
+  logout(){
+    //this.navCtrl.navigateForward('../singin');
   }
 
 }

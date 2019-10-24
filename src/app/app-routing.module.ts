@@ -9,7 +9,10 @@ const routes: Routes = [
   { path: 'slide', loadChildren: './pages/slide/slide.module#SlidePageModule' },
   { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
   { path: 'signin', loadChildren: './pages/signin/signin.module#SigninPageModule' },
-  { path: 'main', loadChildren: './pages/main/main.module#MainPageModule' },
+  { path: 'main', loadChildren: './pages/main/main.module#MainPageModule' },  { path: 'notifications', loadChildren: './pages/notifications/notifications.module#NotificationsPageModule' },
+  { path: 'contactus', loadChildren: './pages/contactus/contactus.module#ContactusPageModule' },
+  { path: 'blogdetails', loadChildren: './pages/blogdetails/blogdetails.module#BlogdetailsPageModule' },
+
 ];
 
 @NgModule({

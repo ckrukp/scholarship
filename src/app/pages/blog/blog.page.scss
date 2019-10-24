@@ -1,0 +1,74 @@
+ion-header ion-icon{
+    color:#197CDD;
+    width:25px;
+    height:25px;
+}
+
+ion-title {
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:16px;
+    color:#3D4452;
+}
+
+ion-content {
+    --background: #F7FAFD;
+}
+
+ion-card {
+    --background:#fff;
+    height: 480px;
+    
+    .blog-item-header-img img {
+        height: 205px;
+    }
+
+    .blog-item-header-date {
+        font-family: 'SF-Pro-Text-Light';
+        font-size: 13px;
+        line-height: 120%;
+        color:#94A1B0;
+
+        margin-bottom:17px;
+    }
+
+    .blog-item-header-title {
+        font-family: 'SF-Pro-Text-Bold';
+        font-size: 16px;
+        line-height: 170%;
+        color:#171A1F;
+
+        margin-bottom:8px;
+    }
+
+    .blog-item-content-text {
+        font-family: 'SF-Pro-Text-Regular';
+        font-size: 14px;
+        line-height: 180%;
+        color:#3D4452;
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        margin-bottom: 14px;
+    }
+
+    .blog-item-content-comments, .blog-item-content-share {
+        display: inline;
+
+        font-family: 'SF-Pro-Text-Regular';
+        font-size: 13px;
+        line-height: 120%;
+        color:#94A1B0;
+    }
+
+    .blog-item-content-share {
+        float: right;
+    }
+
+    .blog-item-content-comments ion-icon, .blog-item-content-share ion-icon {
+        width: 20px;
+        height: 20px;
+        margin-right:10px;
+        vertical-align: middle;
+    }
+}
