@@ -1,0 +1,30 @@
+ion-header {
+    box-shadow: 0px 10px 15px rgba(5, 66, 125, 0.03);
+}
+ion-content {
+    --background: #F7FAFD;
+}
+
+ion-list ion-item {
+    --padding-top: 5px !important;
+    --padding-bottom: 5px !important;
+}
+.color-filter {
+    color: #3D4452 !important;
+    --color: #3D4452 !important;
+}
+.color-content {
+    color: #94A1B0 !important;
+    --color: #94A1B0 !important;
+}
+.border-item {
+    --border-color: #94a1b055 !important;
+}
+
+ion-range {
+    --bar-background: #CAD6E3;
+    --bar-background-active: #197CDD;
+    --bar-height: 6px;
+    --bar-border-radius: 3px;
+    --knob-background: #278CEF;
+}

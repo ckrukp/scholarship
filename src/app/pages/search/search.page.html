@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-searchbar (ionChange)="updateSchedule()" placeholder="Search university, scholarships or country"></ion-searchbar>
+      <ion-label slot="end">Cancel</ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-list>
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="f-s-16 color-black">Filters</ion-label>
+        <ion-label class="f-s-13 color-blue">Clear All Filters</ion-label>
+      </ion-item>
+
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="color-filter f-s-14">Eligible Nationality</ion-label>
+        <ion-label class="color-content f-s-13">Clear All Filters</ion-label>
+      </ion-item>
+
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="color-filter f-s-14">Awarding Country</ion-label>
+        <ion-label class="color-content f-s-13">Clear All Filters</ion-label>
+      </ion-item>
+
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="color-filter f-s-14">Degree Level</ion-label>
+        <ion-label class="color-content f-s-13">Clear All Filters</ion-label>
+      </ion-item>
+
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="color-filter f-s-14">Subjects</ion-label>
+        <ion-label class="color-content f-s-13">Universities</ion-label>
+      </ion-item>
+
+      <ion-item class="bg-transparent border-item" lines="full">
+        <ion-label class="color-filter f-s-14">Expiration Date</ion-label>
+        <ion-label class="color-content f-s-13">Clear All Filters</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-range dualKnobs="true" min="21" max="72" step="3" pin snabs></ion-range>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-button expand="block">Search</ion-button>
+  
+  </div>
+</ion-content>

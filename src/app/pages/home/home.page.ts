@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular'
 
 @Component({
   selector: 'app-home',
@@ -31,7 +32,7 @@ export class HomePage implements OnInit {
   scholar_date_arr = ['24 Oct 2019', '23 Oct 2019', '23 Oct 2019', '21 Oct 2019', '20 Oct 2019'];
   scholar_img_arr = [];
 
-  constructor() { }
+  constructor(private navCtrl:NavController) { }
 
   ngOnInit() {
 
@@ -56,6 +57,9 @@ export class HomePage implements OnInit {
     }
   }
 
+  displaySearch() {
+    this.navCtrl.navigateForward('/search');
+  }
 }
 
   

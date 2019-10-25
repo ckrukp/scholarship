@@ -2,113 +2,6 @@ ion-content {
     --background: #f7fafd;
 }
 
-.d-flex {
-    display: flex !important;
-}
-.d-block {
-    display: block !important;
-}
-.d-inline-block {
-    display: inline-block !important;
-}
-.d-none {
-    display: none !important;
-}
-.d-inherit {
-    display: inherit !important;
-}
-
-.flex-column {
-    flex-flow: column !important;
-}
-.flex-wrap {
-    flex-wrap: wrap !important;
-}
-
-.justify-content-evenly {
-    justify-content: space-evenly !important;
-}
-.justify-content-flex-start {
-    justify-content: flex-start !important;
-}
-.bg-transparent {
-    background: transparent !important;
-    --background: transparent !important;
-}
-.bg-blue-grad {
-    background: linear-gradient(180deg, #278CEF 0%, #197CDD 100%) !important;
-    --background: linear-gradient(180deg, #278CEF 0%, #197CDD 100%) !important;
-}
-.bg-white {
-    background: white;
-    --background: white;
-}
-
-.f-s-18 {
-    font-size: 18px !important;
-}
-.f-s-16 {
-    font-size: 16px !important;
-}
-.f-s-14 {
-    font-size: 14px !important;
-}
-.f-s-13 {
-    font-size: 13px !important;
-}
-
-.color-black {
-    color: #171A1F !important;
-    --color: #171A1F !important;
-}
-.color-white { 
-    color: white !important;
-    --color: white !important;
-}
-.color-blue {
-    color: #197CDD !important;
-    --color: #197CDD !important;
-}
-
-.m-t-15 {
-    margin-top: 15px !important;
-    --margin-top: 15px !important;
-}
-
-.p-r-16 {
-    padding-right: 16px !important;
-    --padding-start: 16px !important;
-}
-.p-l-16 {
-    padding-left: 16px !important;
-    --padding-end: 16px !important;
-}
-.p-l-10 {
-    padding-left: 10px !important;
-    --padding-end: 10px !important;
-}
-.p-l-25 {
-    padding-left: 25px !important;
-    --padding-left: 25px !important;
-}
-.p-x-25 {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    --padding-left: 25px !important;
-    --padding-right: 25px !important;
-}
-.p-t-15 {
-    padding-top: 15px !important;
-    --padding-top: 15px !important;
-}
-.p-t-7 {
-    padding-top: 7px !important;
-    --padding-top: 7px !important;
-}
-.p-t-5 {
-    padding-top: 5px !important;
-    --padding-top: 5px !important;
-}
 .card-small {
     width: 128px;
     height: 128px;
@@ -118,9 +11,6 @@ ion-content {
     text-align: center;
 }
 
-.o-flow-x-auto {
-    overflow-x: auto !important;
-}
 
 .main-sky {
     width: 100vw;
