@@ -11,7 +11,7 @@
   <div class="blog-header-img">
     <img src="../../../assets/img/blogs/blog_1.png" />
   </div>
-
+<div class="ss">
   <div class="blog-content-part">
     <ion-card>
       <ion-card-content>
@@ -48,11 +48,50 @@
   </div>
 
   <div class="blog-view-other">
-    <ion-button><ion-icon name="arrow-back"></ion-icon>previous</ion-button>
-    <ion-button>next<ion-icon name="arrow-forward"></ion-icon></ion-button>
+    <button class="blog-view-before"><ion-icon src="../../../assets/img/blog-arrow-left-icon.svg"></ion-icon>previous</button>
+    <button class="blog-view-next">next<ion-icon src="../../../assets/img/blog-arrow-right-icon.svg"></ion-icon></button>
   </div>
 
-  <div></div>
+  <div class="blog-comments-title">
+    <ion-icon src="../../../assets/img/blog-comment-icon.svg"></ion-icon>
+    <ion-label> 3 Comments</ion-label>
+  </div>
 
-  <div></div>
+  <div class="blog-list-part">
+    <ion-card>
+      <ion-list>
+        <ion-item lines="full" class="blog-item" *ngFor="let sblog of blogsimpledata">
+          <div>
+            <ion-item lines="none" class="blog-simple-header">
+                <ion-avatar slot="start">
+                  <img src="{{sblog.image}}">
+                </ion-avatar>
+                <ion-label>
+                  <h2>{{sblog.userid}}</h2>
+                  <p>{{sblog.date}}</p>
+                </ion-label>
+            </ion-item>
+            <div class="blog-simple-content">
+              {{sblog.simplecontent}}
+            </div>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+
+  <div class="blog-comments-title">
+    <ion-icon src="../../../assets/img/blog-add-comment-icon.svg"></ion-icon>
+    <ion-label> Add Comment</ion-label>
+  </div>
+
+  <div class="blog-add-part">
+    <ion-card>
+      <div class="blog-add-input">
+        <ion-textarea class="blog-add-textarea" rows='6'></ion-textarea>
+        <button class="blog-add-btn">Add Comment</button>
+      </div>
+    </ion-card>
+  </div>
+</div>
 </ion-content>

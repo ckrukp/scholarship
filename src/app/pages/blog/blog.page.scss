@@ -14,7 +14,33 @@ ion-content {
     --background: #F7FAFD;
 }
 
-ion-card {
+.blog-category {
+    --background:#fff;
+    //height: 56px;
+    ion-item {
+        height: 56px;
+        margin-top:10px;
+    }
+    .blog-category-title {
+        font-family: 'SF-Pro-Text-Bold';
+        font-size: 14px;
+        line-height: 170%;
+        color:#171A1F;
+    }
+    .blog-category-subtitle {
+        font-family: 'SF-Pro-Text-Light';
+        font-size: 13px;
+        line-height: 145%;
+        color:#94A1B0;
+    }
+    .blog-category-arrow {
+        width:25px;
+        height:20px;
+        color:#197CDD;
+    }
+}
+
+.blog-list ion-card {
     --background:#fff;
     height: 480px;
     
