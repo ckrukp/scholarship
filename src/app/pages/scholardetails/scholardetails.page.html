@@ -1,0 +1,177 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-icon class="header-back-btn" name="arrow-back" slot="start" (click)="displayPrevious()"></ion-icon>
+      <ion-title>Scholarship Details</ion-title>
+      <ion-icon class="header-share-btn" name="share-alt" slot="end"></ion-icon>
+      <ion-icon class="header-search-btn" name="search" slot="end"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content>
+  <div class="scholar-header-img">
+    <img src="../../../assets/img/scholars/scholar_0.png" />
+  </div>
+
+  <div class="scholar-detail-content-part">
+
+    <div class="scholar-item">
+      <ion-card >
+        <ion-card-content>
+          <div class="scholar-item-header-title">NUS Department of Economic PhD scholarships in Singapore, 2020</div>
+          <div class="scholar-item-content-fund">
+            <ion-icon src="../../../assets/img/scholar-fund-icon.svg"></ion-icon>
+            <ion-label> Fully Funded</ion-label>
+          </div>
+          <div class="scholar-item-content-school">
+            <ion-icon src="../../../assets/img/scholar-school-icon.svg"></ion-icon>
+            <ion-label> National University of Singapore</ion-label>
+          </div>
+          <div class="scholar-item-content-degree">
+            <ion-icon src="../../../assets/img/scholar-degree-icon.svg"></ion-icon>
+            <ion-label> PhD</ion-label>
+          </div>
+          <div class="scholar-item-content-branch">
+            <ion-icon src="../../../assets/img/scholar-branch-icon.svg"></ion-icon>
+            <ion-label> Economics</ion-label>
+          </div>
+          <div class="scholar-item-content-range">
+            <ion-icon src="../../../assets/img/scholar-range-icon.svg"></ion-icon>
+            <ion-label> International Students</ion-label>
+          </div>
+          <div class="scholar-item-content-country">
+            <ion-icon src="../../../assets/img/scholar-country-icon.svg"></ion-icon>
+            <ion-label> Singapore</ion-label>
+          </div>
+          <div class="scholar-item-content-date">
+            <ion-icon src="../../../assets/img/scholar-date-icon.svg"></ion-icon>
+            <ion-label> November 5, 2015</ion-label>
+          </div>
+
+          <div class="scholar-item-content-expire-inactive">
+            <button><ion-icon src="../../../assets/img/scholar-alarm-dislike-icon.svg"></ion-icon> Expires in 40 Days</button>
+          </div>
+
+          <!--div class="scholar-item-content-expire-active" *ngIf="scholar.like==='active'">
+            <button><ion-icon src="../../../assets/img/scholar-alarm-like-icon.svg"></ion-icon> Expired</button>
+          </div-->
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-description">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Scholarship Description
+          </div>
+          <div class="scholar-details-subcontent">
+              University Of Hamburg Doctoral Scholarships in Germany, 2020 is open for International Students. The scholarship allows PhD, Post Doctorate level programm(s) in the field of All Subjects taught at University of Hamburg. The deadline of the scholarhip is 
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-degree-level">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Degree Level
+          </div>
+          <div class="scholar-details-subcontent">
+              PhD, Post Doc
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-availsubject">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Available Subjects
+          </div>
+          <div class="scholar-details-subcontent">
+              Scholarships is available for any subject taught in University.
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-benefits">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Scholarship Benefits
+          </div>
+          <div class="scholar-details-subcontent">
+              EUR 1200, EUR 154 for childcare
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-nationalities">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Eligible Nationalities
+          </div>
+          <div class="scholar-details-subcontent">
+              Students from all Nationalities are able to apply.
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-requirements">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">
+              Eligibility Requirements
+          </div>
+          <div class="scholar-details-subcontent">
+              Only on rare occasions, the university will accept candidates who graduated three years back, on the grounds of health or family related issues;
+              The applicants for the University Of Hamburg – Doctoral Scholarships in Germany, 2020 must have above-average grades in their graduate degree;
+              Hamburg students who meet the criteria are eligible.
+          </div>
+
+          <div class="scholar-details-website">
+            <button>Scholarship Website<ion-icon src="../../../assets/img/scholar-item-web.svg"></ion-icon></button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="scholar-view-other">
+        <button class="scholar-view-before"><ion-icon src="../../../assets/img/blog-arrow-left-icon.svg"></ion-icon>previous</button>
+        <button class="scholar-view-next">next<ion-icon src="../../../assets/img/blog-arrow-right-icon.svg"></ion-icon></button>
+    </div>
+
+    <div class="scholar-related-objects">
+      <ion-card>
+        <ion-card-content>
+          <div class="scholar-details-subtitle">Related Posts</div>
+          <ion-list>
+            <ion-item lines="full">
+              IET Diamond Jubilee Scholarships at The Institution of Engineering and Technology in UK, 2019
+            </ion-item>
+            <ion-item lines="full">
+              International Mathematical Union Abel Visiting Scholar Program in US, 2020
+            </ion-item>
+            <ion-item lines="full">
+              University of Sussex Joe Holmberg-Brandwatch Scholarships in UK, 2019
+            </ion-item>
+            <ion-item lines="full">
+              John Crump Studentships in UK, 2019
+            </ion-item>
+            <ion-item lines="full">
+              Griffith Remarkable Scholarships – Griffith University in Australia, 2019
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

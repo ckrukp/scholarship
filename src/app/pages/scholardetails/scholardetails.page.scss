@@ -1,0 +1,167 @@
+ion-header ion-icon{
+    color:#197CDD;
+    width:25px;
+    height:25px;
+}
+
+ion-title {
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:16px;
+    color:#3D4452;
+}
+
+.header-back-btn {
+    padding-left: 16px;
+}
+
+.header-search-btn {
+    padding-right:15px;
+    padding-left:20px;
+}
+
+ion-content {
+    --background: #F7FAFD;
+}
+
+.scholar-item ion-card {
+    --background:#fff;
+    height: 410px;
+
+    .scholar-item-header-title {
+        font-family: 'SF-Pro-Text-Bold';
+        font-size: 16px;
+        line-height: 170%;
+        color:#171A1F;
+
+        margin-bottom:8px;
+    }
+
+    ion-card-content ion-icon {
+        vertical-align: middle;
+    }
+
+    ion-card-content ion-label {
+        font-family: 'SF-Pro-Text-Regular';
+        font-size: 14px;
+        line-height: 250%;
+        color:#3D4452;
+    }
+
+    .scholar-item-content-expire-inactive button {
+        width:100%;
+        height: 48px;
+        background:#fff2e0;
+        border-radius: 6px;
+
+        font-family: 'SF-Pro-Text-Regular';
+        font-size: 16px;
+        line-height: 110%;
+        color:#FF9B01;
+
+        margin-top:15px;
+    }
+
+    .scholar-item-content-expire-active button {
+        width:100%;
+        height: 48px;
+        background:#fde5e8;
+        border-radius: 6px;
+
+        font-family: 'SF-Pro-Text-Regular';
+        font-size: 16px;
+        line-height: 110%;
+        color:#EF2E43;
+
+        margin-top:15px;
+    }
+}
+
+ion-card {
+    background:#fff;
+}
+
+.scholar-details-subtitle {
+    font-family: 'SF-Pro-Text-Bold';
+    font-size:16px;
+    line-height: 170%;
+    color:#171A1F;
+
+    margin-bottom: 10px;
+}
+
+.scholar-details-subcontent {
+    font-family: 'SF-Pro-Text-Regular';
+    font-size:14px;
+    line-height: 180%;
+    color:#3D4452;
+
+    margin-bottom: 19px;
+}
+
+.scholar-view-other {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scholar-view-other button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width:168px;
+    height:48px;
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:16px;
+    line-height: 120%;
+    color: #3D4452;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(5, 66, 125, 0.05);
+    border-radius: 10px;
+}
+
+.scholar-view-before ion-icon{
+    margin-right:15px;
+}
+
+.scholar-view-next ion-icon{
+    margin-left:15px;
+}
+
+.scholar-view-other ion-icon {
+    width:20px;
+    height:15px;
+    color:#197CDD !important;
+}
+
+.scholar-related-objects {
+    ion-item {
+        font-family: 'SF-Pro-Text-Regular';
+        font-size:14px;
+        line-height: 180%;
+        color:#197CDD;
+        --margin-top:13px;
+        --margin-bottom:13px;
+        -border-color:#ccc;
+    }
+}
+
+.scholar-details-website button{
+    width:100%;
+    height: 48px;
+    background: #197CDD;
+    box-shadow: 0px 4px 12px rgba(39, 140, 239, 0.2);
+    border-radius: 10px;
+
+    font-family: 'SF-Pro-Display-Regular';
+    font-size: 16px;
+    line-height: 120%;
+    color:#fff;
+
+    ion-icon {
+        color:#fff;
+        width:15px;
+        height: 15px;
+        margin-left: 15px;
+    }
+
+}
