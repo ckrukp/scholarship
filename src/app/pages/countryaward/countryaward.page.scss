@@ -1,0 +1,97 @@
+ion-header ion-icon{
+    color:#197CDD;
+    width:25px;
+    height:25px;
+}
+
+ion-title {
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:16px;
+    color:#3D4452;
+}
+
+ion-content {
+    --background: #F7FAFD;
+}
+
+.search-country-box {
+    background-color:#fff;
+    color:#CAD6E3;
+    font-family:'SF-Pro-Text-Regular';
+    // padding-top:10px;
+    // padding-bottom: 10px;
+
+    ion-searchbar {
+        // width:344px;
+        height: 36px;
+        --background:#fff;
+        border: 1px solid #CAD6E3;
+        box-sizing: border-box;
+        border-radius: 6px;
+        color:#CAD6E3; 
+        
+    }
+}
+
+.award-country-list {
+    ion-item {
+        height: 56px;
+        --border-color: #ddd;
+    }
+    .list-all-select-part ion-label {
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .list-all-select-title {
+        font-family: 'SF-Pro-Display-Bold';
+        font-size:16px;
+        line-height: 140.62%;
+        color:#171A1F;
+    }
+    .list-all-select-button{
+        font-family: 'SF-Pro-Text-Regular';
+        font-size:13px;
+        line-height: 120%;
+        color:#197CDD;
+    }
+    .country-flag {
+        width:20px;
+        height:50px;
+    }
+    .country-name {
+        font-family: 'SF-Pro-Text-Regular';
+        font-size:14px;
+        line-height: 140.62%;
+        color:#3D4452;
+    }
+    ion-checkbox{
+        --icon-color:#278CEF;
+        --checkmark-color:#278CEF;
+        --border-color:transparent;
+        --border-color-checked:transparent;
+        --background-checked:transparent;
+    }
+}
+
+.apply-btn-part{
+    width:100%;
+    margin-bottom: 20px;
+
+    .apply-select-btn {
+        width:85%;
+        height: 48px;
+        background: #197CDD;
+        box-shadow: 0px 4px 12px rgba(39, 140, 239, 0.2);
+        border-radius: 10px;
+
+        font-family: 'SF-Pro-Display-Regular';
+        font-size: 16px;
+        line-height: 120%;
+        color:#fff;
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+
+
+}

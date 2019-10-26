@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'blogdetails', loadChildren: './pages/blogdetails/blogdetails.module#BlogdetailsPageModule' },
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
   { path: 'scholardetails', loadChildren: './pages/scholardetails/scholardetails.module#ScholardetailsPageModule' },
+  { path: 'countryaward', loadChildren: './pages/countryaward/countryaward.module#CountryawardPageModule' },
 
 ];
 

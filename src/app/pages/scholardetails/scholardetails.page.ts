@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-scholardetails',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScholardetailsPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  displayPrevious() {
+    this.navCtrl.back();
   }
 
 }

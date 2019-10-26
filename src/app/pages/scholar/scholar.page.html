@@ -3,57 +3,56 @@
       <ion-title>Scholarships</ion-title>
       <ion-icon class="header-search-btn" slot="end" name="search"></ion-icon>
     </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-  
-    <div class="scholar-list">
-      <ion-card *ngFor="let scholar of scholardata" (click)="displayDetails()">
-        <div class="scholar-item-header-img">
-          <img src="{{scholar.imgPath}}" />
+</ion-header>
+
+<ion-content>
+
+  <div class="scholar-list">
+    <ion-card *ngFor="let scholar of scholardata" (click)="displayDetails()">
+      <div class="scholar-item-header-img">
+        <img src="{{scholar.imgPath}}" />
+      </div>
+      <ion-card-content>
+        <div class="scholar-item-header-title">{{scholar.title}}</div>
+        <div class="scholar-item-content-fund">
+          <ion-icon src="../../../assets/img/scholar-fund-icon.svg"></ion-icon>
+          <ion-label> {{scholar.fund}}</ion-label>
         </div>
-        <ion-card-content>
-          <div class="scholar-item-header-title">{{scholar.title}}</div>
-          <div class="scholar-item-content-fund">
-            <ion-icon src="../../../assets/img/scholar-fund-icon.svg"></ion-icon>
-            <ion-label> {{scholar.fund}}</ion-label>
-          </div>
-          <div class="scholar-item-content-school">
-            <ion-icon src="../../../assets/img/scholar-school-icon.svg"></ion-icon>
-            <ion-label> {{scholar.school}}</ion-label>
-          </div>
-          <div class="scholar-item-content-degree">
-            <ion-icon src="../../../assets/img/scholar-degree-icon.svg"></ion-icon>
-            <ion-label> {{scholar.degree}}</ion-label>
-          </div>
-          <div class="scholar-item-content-branch">
-            <ion-icon src="../../../assets/img/scholar-branch-icon.svg"></ion-icon>
-            <ion-label> {{scholar.branch}}</ion-label>
-          </div>
-          <div class="scholar-item-content-range">
-            <ion-icon src="../../../assets/img/scholar-range-icon.svg"></ion-icon>
-            <ion-label> {{scholar.range}}</ion-label>
-          </div>
-          <div class="scholar-item-content-country">
-            <ion-icon src="../../../assets/img/scholar-country-icon.svg"></ion-icon>
-            <ion-label> {{scholar.country}}</ion-label>
-          </div>
-          <div class="scholar-item-content-date">
-            <ion-icon src="../../../assets/img/scholar-date-icon.svg"></ion-icon>
-            <ion-label> {{scholar.date}}</ion-label>
-          </div>
+        <div class="scholar-item-content-school">
+          <ion-icon src="../../../assets/img/scholar-school-icon.svg"></ion-icon>
+          <ion-label> {{scholar.school}}</ion-label>
+        </div>
+        <div class="scholar-item-content-degree">
+          <ion-icon src="../../../assets/img/scholar-degree-icon.svg"></ion-icon>
+          <ion-label> {{scholar.degree}}</ion-label>
+        </div>
+        <div class="scholar-item-content-branch">
+          <ion-icon src="../../../assets/img/scholar-branch-icon.svg"></ion-icon>
+          <ion-label> {{scholar.branch}}</ion-label>
+        </div>
+        <div class="scholar-item-content-range">
+          <ion-icon src="../../../assets/img/scholar-range-icon.svg"></ion-icon>
+          <ion-label> {{scholar.range}}</ion-label>
+        </div>
+        <div class="scholar-item-content-country">
+          <ion-icon src="../../../assets/img/scholar-country-icon.svg"></ion-icon>
+          <ion-label> {{scholar.country}}</ion-label>
+        </div>
+        <div class="scholar-item-content-date">
+          <ion-icon src="../../../assets/img/scholar-date-icon.svg"></ion-icon>
+          <ion-label> {{scholar.date}}</ion-label>
+        </div>
 
-          <div class="scholar-item-content-expire-inactive" *ngIf="scholar.like==='inactive'">
-            <button><ion-icon src="../../../assets/img/scholar-alarm-dislike-icon.svg"></ion-icon> Expires in 40 Days</button>
-          </div>
+        <div class="scholar-item-content-expire-inactive" *ngIf="scholar.like==='inactive'">
+          <button><ion-icon src="../../../assets/img/scholar-alarm-dislike-icon.svg"></ion-icon> Expires in 40 Days</button>
+        </div>
 
-          <div class="scholar-item-content-expire-active" *ngIf="scholar.like==='active'">
-            <button><ion-icon src="../../../assets/img/scholar-alarm-like-icon.svg"></ion-icon> Expired</button>
-          </div>
+        <div class="scholar-item-content-expire-active" *ngIf="scholar.like==='active'">
+          <button><ion-icon src="../../../assets/img/scholar-alarm-like-icon.svg"></ion-icon> Expired</button>
+        </div>
 
-        </ion-card-content>
-      </ion-card>
-    </div>
-  
-  </ion-content>
-  
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
