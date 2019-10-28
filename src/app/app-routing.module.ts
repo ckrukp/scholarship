@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'blogdetails', loadChildren: './pages/blogdetails/blogdetails.module#BlogdetailsPageModule' },
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
   { path: 'scholardetails', loadChildren: './pages/scholardetails/scholardetails.module#ScholardetailsPageModule' },
-  { path: 'filterdetail', loadChildren: './pages/filterdetail/filterdetail.module#FilterdetailPageModule' },
+  { path: 'filterdetail', loadChildren: './pages/filterdetail/filterdetail.module#FilterdetailPageModule' },  { path: 'viewall', loadChildren: './pages/viewall/viewall.module#ViewallPageModule' },
+
 
 ];
 
