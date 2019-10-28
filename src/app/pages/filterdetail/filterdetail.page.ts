@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-countryaward',
-  templateUrl: './countryaward.page.html',
-  styleUrls: ['./countryaward.page.scss'],
+  selector: 'app-filterdetail',
+  templateUrl: './filterdetail.page.html',
+  styleUrls: ['./filterdetail.page.scss'],
 })
-export class CountryawardPage implements OnInit {
+export class FilterdetailPage implements OnInit {
 
   countryAwardList = [
     {
@@ -56,4 +56,8 @@ export class CountryawardPage implements OnInit {
     this.navCtrl.back();
   }
 
+  displayScholar() {
+    this.navCtrl.navigateForward('/main/main/scholar');
+  }
+  
 }

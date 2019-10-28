@@ -54,6 +54,29 @@
     font-size: 13px !important;
 }
 
+
+.f-f-pro-display-regular {
+    font-family: 'SF-Pro-Display-Regular' !important;
+}
+.f-f-pro-display-bold {
+    font-family: 'SF-Pro-Display-bold' !important;
+}
+.f-f-pro-display-semibold {
+    font-family: 'SF-Pro-Display-semibold' !important;
+}
+.f-f-pro-text-bold {
+    font-family: 'SF-Pro-Text-Bold' !important;
+}
+.f-f-pro-text-light {
+    font-family: 'SF-Pro-Text-Light' !important;
+}
+.f-f-pro-text-regular {
+    font-family: 'SF-Pro-Text-Regular' !important;
+}
+.f-f-pro-text-medium {
+    font-family: 'SF-Pro-Text-Medium' !important;
+}
+
 .color-black {
     color: #171A1F !important;
     --color: #171A1F !important;
@@ -71,7 +94,35 @@
     margin-top: 15px !important;
     --margin-top: 15px !important;
 }
+.m-r-12 {
+    margin-left: 12px !important;
+    --margin-start: 12px !important;
+}
 
+
+.p-0 {
+    padding: 0 !important;
+}
+.p-s-0 {
+    --padding-start: 0 !important;
+}
+.p-i-e-0 {
+    --inner-padding-end: 0 !important;
+}
+.p-i-e-10 {
+    --inner-padding-end: 0 !important;
+}
+.p-s-15 {
+    --padding-start: 15px !important;
+}
+.p-e-15 {
+    --padding-end: 15px !important;
+    --padding-start: 15px !important;
+}
+.p-r-0 {
+    padding-right: 0px !important;
+    --padding-start: 0px !important;
+}
 .p-r-16 {
     padding-right: 16px !important;
     --padding-start: 16px !important;

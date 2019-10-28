@@ -18,11 +18,13 @@ ion-content {
     background-color:#fff;
     color:#CAD6E3;
     font-family:'SF-Pro-Text-Regular';
-    // padding-top:10px;
-    // padding-bottom: 10px;
+    height: 56px;
+    align-items: center !important;
+    padding-left: 16px;
+    padding-right: 15px;
+    box-shadow: 0px 10px 20px rgba(5, 66, 125, 0.05);
 
     ion-searchbar {
-        // width:344px;
         height: 36px;
         --background:#fff;
         border: 1px solid #CAD6E3;
@@ -34,6 +36,9 @@ ion-content {
 }
 
 .award-country-list {
+    ion-list {
+        padding-bottom: 96px !important;
+    }
     ion-item {
         height: 56px;
         --border-color: #ddd;
@@ -75,7 +80,8 @@ ion-content {
 
 .apply-btn-part{
     width:100%;
-    margin-bottom: 20px;
+    position: fixed;
+    bottom: 24px;
 
     .apply-select-btn {
         width:85%;
@@ -92,6 +98,5 @@ ion-content {
         justify-content: center;
         margin:auto;
     }
-
 
 }

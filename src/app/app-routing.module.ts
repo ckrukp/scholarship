@@ -9,12 +9,13 @@ const routes: Routes = [
   { path: 'slide', loadChildren: './pages/slide/slide.module#SlidePageModule' },
   { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
   { path: 'signin', loadChildren: './pages/signin/signin.module#SigninPageModule' },
-  { path: 'main', loadChildren: './pages/main/main.module#MainPageModule' },  { path: 'notifications', loadChildren: './pages/notifications/notifications.module#NotificationsPageModule' },
+  { path: 'main', loadChildren: './pages/main/main.module#MainPageModule' },
+  { path: 'notifications', loadChildren: './pages/notifications/notifications.module#NotificationsPageModule' },
   { path: 'contactus', loadChildren: './pages/contactus/contactus.module#ContactusPageModule' },
   { path: 'blogdetails', loadChildren: './pages/blogdetails/blogdetails.module#BlogdetailsPageModule' },
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
   { path: 'scholardetails', loadChildren: './pages/scholardetails/scholardetails.module#ScholardetailsPageModule' },
-  { path: 'countryaward', loadChildren: './pages/countryaward/countryaward.module#CountryawardPageModule' },
+  { path: 'filterdetail', loadChildren: './pages/filterdetail/filterdetail.module#FilterdetailPageModule' },
 
 ];
 

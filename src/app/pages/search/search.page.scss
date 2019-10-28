@@ -28,3 +28,42 @@ ion-range {
     --bar-border-radius: 3px;
     --knob-background: #278CEF;
 }
+
+.btn-search {
+    width: calc(100vw - 30px);
+    position: absolute;
+    bottom: 24px;
+    left: 15px;
+}
+ion-toolbar .toolbar-container {
+    padding-inline-end: 16px !important;
+}
+
+.searchbar-div {
+    align-items: center;
+    height: 56px !important;
+    
+    ion-searchbar.ss-searchbar {
+        border: 1px solid #CAD6E3 !important;
+        border-radius: 6px !important;
+        height: 36px;
+        --placeholder-color: #CAD6E3;
+        --placeholder-opacity: 1 !important;
+
+        input.searchbar-input {
+            font-size: 14px !important;
+        }
+    }
+}
+
+.filter-content {
+    text-align: right !important;
+    width: 50vw !important;
+    height: 14px;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+ion-range {
+    padding-top: 0 !important;
+}

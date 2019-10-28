@@ -61,9 +61,6 @@ export class HomePage implements OnInit {
     this.navCtrl.navigateForward('/search');
   }
 
-  displayAwardingCountry() {
-    this.navCtrl.navigateForward('/countryaward');
-  }
 }
 
   
